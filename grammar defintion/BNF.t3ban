@@ -1,0 +1,86 @@
+Program → Program ClassDeclaration End.
+
+ClassDeclaration → Category ID{ Class_Implementation } 
+	| Category ID Derive { Class_Implementation }
+
+Class_Implementation → VarDeclaration 
+	| MethodDeclaration Class_Implementation 
+	| Comment Class_Implementation 
+	| using_command Class_Implementation
+	| Func _Call  Class_Implementation 
+	|empty 
+	
+MethodDeclaration → Func Decl ;
+	| Func Decl { VarDeclaration  Statements }
+
+Func Decl → Type ID (ParameterList) 
+
+Type → Ilap | Silap | Clop | Series | Ilapf | Silapf | None | Logical 
+
+ParameterList → empty | None | Non-Empty List 
+
+Non-Empty List → Type  ID | Non-Empty List  , Type  ID 
+
+VarDeclaration → empty | Type  ID_List  ; VarDeclaration 
+
+ID_List → ID | ID_List  , ID 
+
+Statements → empty | Statement  Statements 
+
+Statement → Assignment 
+	| If _Statement 
+	| Rotatewhen _Statement 
+	| Continuewhen_Statement 
+	| Replywith _ Statement 
+	| terminatethis _Statement
+	|read (ID); 
+	| write (Expression);
+	
+Assignment → VarDeclaration = Expression;
+ 
+Func _Call → ID (Argument_List);
+
+Argument_List → empty | NonEmpty_Argument_List
+
+NonEmpty_Argument_List → Expression | NonEmpty_Argument_List , Expression
+
+Block Statements → {  statements }
+
+If _Statement → Tik (Condition _Expression)  Block Statements 
+	| Tik (Condition _Expression)  Block Statements Flick Block Statements
+	
+Condition _Expression → Condition | Condition Condition _Op  Condition 
+
+Condition _Op → and | or
+
+Condition → Expression Comparison _Op Expression
+ 
+Comparison _Op → == | != | > | >= | < | <= 
+
+Rotate _Statement → Rotate when(Condition _Expression) Block Statements
+ 
+Continuewhen_Statement → Continuewhen ( expression ; expression ; expression ) Block Statements
+
+Replywith_Statement → Replywith Expression; | returnID;
+
+terminatethis _Statement → terminatethis;
+
+Expression → Term | Expression Add_Op Term
+
+Add_Op → + | - 
+
+Term → Factor| Term Mul_Op Factor
+
+Mul_Op → * | / 
+
+Factor → ID| Number
+
+Comment → #* STR *# | -- STR 
+
+using_command → using(F_name.txt);
+
+F_name → STR 
+ 
+ 
+
+#Note: empty means Ebslon, STR means string 
