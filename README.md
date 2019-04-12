@@ -51,4 +51,4 @@ It is a project for CS419 course.
 - “
 
 ## BNF
-![BNF_IMAGE}(https://github.com/S3L1M/ElT3baneen-Compiler/blob/master/grammar%20defintion/IMAGES/Annotation%202019-04-12%20040640.png)
+![BNF_IMAGE}(https://raw.githubusercontent.com/S3L1M/ElT3baneen-Compiler/master/grammar%20defintion/IMAGES/Annotation%202019-04-12%20040640.png)
