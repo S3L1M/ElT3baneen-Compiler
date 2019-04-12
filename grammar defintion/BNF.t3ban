@@ -1,86 +1,92 @@
-Program → Program ClassDeclaration End.
+Program -> ClassDeclaration End
 
-ClassDeclaration → Category ID{ Class_Implementation } 
+ClassDeclaration -> Category ID { Class_Implementation } 
 	| Category ID Derive { Class_Implementation }
 
-Class_Implementation → VarDeclaration 
+Class_Implementation -> VarDeclaration 
 	| MethodDeclaration Class_Implementation 
 	| Comment Class_Implementation 
 	| using_command Class_Implementation
-	| Func _Call  Class_Implementation 
-	|empty 
+	| Func_Call  Class_Implementation 
+	| EPSILON 
 	
-MethodDeclaration → Func Decl ;
-	| Func Decl { VarDeclaration  Statements }
+MethodDeclaration -> Func_Decl ;
+	| Func_Decl { VarDeclaration  Statements }
 
-Func Decl → Type ID (ParameterList) 
+Func_Decl -> Type ID ( ParameterList ) 
 
-Type → Ilap | Silap | Clop | Series | Ilapf | Silapf | None | Logical 
+Type -> Ilap | Silap | Clop | Series | Ilapf | Silapf | None | Logical 
 
-ParameterList → empty | None | Non-Empty List 
+ParameterList -> EPSILON | None | Non-Empty-List 
 
-Non-Empty List → Type  ID | Non-Empty List  , Type  ID 
+Non-Empty-List -> Type ID Non-Empty-List' 
 
-VarDeclaration → empty | Type  ID_List  ; VarDeclaration 
+Non-Empty-List' -> , Type ID Non-Empty-List' | EPSILON	
 
-ID_List → ID | ID_List  , ID 
+VarDeclaration -> EPSILON | Type ID_List ; VarDeclaration 
 
-Statements → empty | Statement  Statements 
+ID_List -> ID ID_List'
 
-Statement → Assignment 
-	| If _Statement 
-	| Rotatewhen _Statement 
+ID_List' -> , ID ID_List' | EPSILON
+
+Statements -> EPSILON | Statement  Statements 
+
+Statement -> Assignment 
+	| If_Statement 
+	| Rotatewhen_Statement 
 	| Continuewhen_Statement 
-	| Replywith _ Statement 
-	| terminatethis _Statement
-	|read (ID); 
-	| write (Expression);
+	| Replywith_Statement 
+	| terminatethis_Statement
+	| read ( ID ) ; 
+	| write ( Expression ) ;
 	
-Assignment → VarDeclaration = Expression;
+Assignment -> VarDeclaration = Expression;
  
-Func _Call → ID (Argument_List);
+Func_Call -> ID ( Argument_List ) ;
 
-Argument_List → empty | NonEmpty_Argument_List
+Argument_List -> EPSILON | NonEmpty_Argument_List
 
-NonEmpty_Argument_List → Expression | NonEmpty_Argument_List , Expression
+NonEmpty_Argument_List -> Expression NonEmpty_Argument_List' 
 
-Block Statements → {  statements }
+NonEmpty_Argument_List' -> , Expression NonEmpty_Argument_List' | EPSILON
 
-If _Statement → Tik (Condition _Expression)  Block Statements 
-	| Tik (Condition _Expression)  Block Statements Flick Block Statements
+Block_Statements -> { Statements }
+
+If_Statement -> Tik ( Condition_Expression )  Block_Statements 
+	| Tik ( Condition_Expression ) Block_Statements Flik Block_Statements
 	
-Condition _Expression → Condition | Condition Condition _Op  Condition 
+Condition_Expression -> Condition | Condition Condition_Op Condition 
 
-Condition _Op → and | or
+Condition_Op -> and | or
 
-Condition → Expression Comparison _Op Expression
+Condition -> Expression Comparison_Op Expression
  
-Comparison _Op → == | != | > | >= | < | <= 
+Comparison_Op -> == | != | > | >= | < | <= 
 
-Rotate _Statement → Rotate when(Condition _Expression) Block Statements
+Rotate_Statement -> Rotate when( Condition_Expression ) Block_Statements
  
-Continuewhen_Statement → Continuewhen ( expression ; expression ; expression ) Block Statements
+Continuewhen_Statement -> Continuewhen ( Expression ; Expression ; Expression ) Block_Statements
 
-Replywith_Statement → Replywith Expression; | returnID;
+Replywith_Statement -> Replywith Expression ; | returnID ;
 
-terminatethis _Statement → terminatethis;
+terminatethis_Statement -> terminatethis ;
 
-Expression → Term | Expression Add_Op Term
+Expression -> Term Expression'
 
-Add_Op → + | - 
+Expression' -> Add_Op Term Expression' | EPSILON
 
-Term → Factor| Term Mul_Op Factor
+Add_Op -> + | - 
 
-Mul_Op → * | / 
+Term -> Factor Term'
 
-Factor → ID| Number
+Term' -> Mul_Op Factor Term' | EPSILON
 
-Comment → #* STR *# | -- STR 
+Mul_Op -> * | / 
 
-using_command → using(F_name.txt);
+Factor -> ID | Number
 
-F_name → STR 
- 
- 
+Comment -> #* STRING *# | -- STRING 
 
-#Note: empty means Ebslon, STR means string 
+using_command -> using ( F_name.txt ) ;
+
+F_name -> STRING 
