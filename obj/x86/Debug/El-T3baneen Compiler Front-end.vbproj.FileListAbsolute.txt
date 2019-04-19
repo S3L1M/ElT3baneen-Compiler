@@ -1,0 +1,30 @@
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.exe
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.pdb
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.xml
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\obj\x86\Debug\El_T3baneen_Compiler_Front_end.Form1.resources
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\obj\x86\Debug\El_T3baneen_Compiler_Front_end.Resources.resources
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.vbproj.GenerateResource.Cache
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.exe
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.xml
+C:\Users\A. Selim\AppData\Local\Temporary Projects\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.pdb
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.exe
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.xml
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.pdb
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.exe
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.pdb
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.xml
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El_T3baneen_Compiler_Front_end.Form1.resources
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El_T3baneen_Compiler_Front_end.Resources.resources
+C:\Users\A. Selim\documents\visual studio 2010\Projects\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.vbproj.GenerateResource.Cache
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.exe
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.pdb
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\bin\Debug\El-T3baneen Compiler Front-end.xml
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El_T3baneen_Compiler_Front_end.Form1.resources
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El_T3baneen_Compiler_Front_end.Resources.resources
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.vbproj.GenerateResource.Cache
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.exe
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.xml
+C:\Users\A. Selim\Desktop\El-T3baneen Compiler Front-end\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.pdb
+D:\Lost Files 6\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.exe
+D:\Lost Files 6\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.xml
+D:\Lost Files 6\El-T3baneen Compiler Front-end\obj\x86\Debug\El-T3baneen Compiler Front-end.pdb
